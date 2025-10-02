@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B49A40416D63264C0B99254F /* Pods_CartExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EC534913851A8C0B194664 /* Pods_CartExercise.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F14492182E8ECD4600A0F074 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06EC534913851A8C0B194664 /* Pods_CartExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F67AFF38334A11DA9FD4F72 /* Pods-CartExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartExercise.release.xcconfig"; path = "Target Support Files/Pods-CartExercise/Pods-CartExercise.release.xcconfig"; sourceTree = "<group>"; };
+		7570484C451D29E5B8059093 /* Pods-CartExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartExercise.debug.xcconfig"; path = "Target Support Files/Pods-CartExercise/Pods-CartExercise.debug.xcconfig"; sourceTree = "<group>"; };
 		F14492012E8ECD4300A0F074 /* CartExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14492172E8ECD4600A0F074 /* CartExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14492212E8ECD4600A0F074 /* CartExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,11 +57,15 @@
 		};
 		F144921A2E8ECD4600A0F074 /* CartExerciseTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = CartExerciseTests;
 			sourceTree = "<group>";
 		};
 		F14492242E8ECD4600A0F074 /* CartExerciseUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = CartExerciseUITests;
 			sourceTree = "<group>";
 		};
@@ -65,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49A40416D63264C0B99254F /* Pods_CartExercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +97,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B95B02EBC64338A5412B1082 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06EC534913851A8C0B194664 /* Pods_CartExercise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E023C5E2AAF21E82056AEF86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7570484C451D29E5B8059093 /* Pods-CartExercise.debug.xcconfig */,
+				1F67AFF38334A11DA9FD4F72 /* Pods-CartExercise.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F14491F82E8ECD4300A0F074 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +122,8 @@
 				F144921A2E8ECD4600A0F074 /* CartExerciseTests */,
 				F14492242E8ECD4600A0F074 /* CartExerciseUITests */,
 				F14492022E8ECD4300A0F074 /* Products */,
+				E023C5E2AAF21E82056AEF86 /* Pods */,
+				B95B02EBC64338A5412B1082 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +144,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F144922A2E8ECD4600A0F074 /* Build configuration list for PBXNativeTarget "CartExercise" */;
 			buildPhases = (
+				D651012E1D6F8A5C6886249E /* [CP] Check Pods Manifest.lock */,
 				F14491FD2E8ECD4300A0F074 /* Sources */,
 				F14491FE2E8ECD4300A0F074 /* Frameworks */,
 				F14491FF2E8ECD4300A0F074 /* Resources */,
@@ -124,8 +157,6 @@
 				F14492032E8ECD4300A0F074 /* CartExercise */,
 			);
 			name = CartExercise;
-			packageProductDependencies = (
-			);
 			productName = CartExercise;
 			productReference = F14492012E8ECD4300A0F074 /* CartExercise.app */;
 			productType = "com.apple.product-type.application";
@@ -147,8 +178,6 @@
 				F144921A2E8ECD4600A0F074 /* CartExerciseTests */,
 			);
 			name = CartExerciseTests;
-			packageProductDependencies = (
-			);
 			productName = CartExerciseTests;
 			productReference = F14492172E8ECD4600A0F074 /* CartExerciseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,8 +199,6 @@
 				F14492242E8ECD4600A0F074 /* CartExerciseUITests */,
 			);
 			name = CartExerciseUITests;
-			packageProductDependencies = (
-			);
 			productName = CartExerciseUITests;
 			productReference = F14492212E8ECD4600A0F074 /* CartExerciseUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +271,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D651012E1D6F8A5C6886249E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CartExercise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F14491FD2E8ECD4300A0F074 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +336,7 @@
 /* Begin XCBuildConfiguration section */
 		F144922B2E8ECD4600A0F074 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7570484C451D29E5B8059093 /* Pods-CartExercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +369,7 @@
 		};
 		F144922C2E8ECD4600A0F074 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F67AFF38334A11DA9FD4F72 /* Pods-CartExercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
