@@ -7,10 +7,265 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B49A40416D63264C0B99254F /* Pods_CartExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06EC534913851A8C0B194664 /* Pods_CartExercise.framework */; };
+		06352C67A3075CFCB2932167 /* Pods_HttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797F2175E164D9C8B67813B6 /* Pods_HttpClient.framework */; };
+		17F3F5C8FE78F565B8759E02 /* Pods_DependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0827C56A90993E8990CA6E41 /* Pods_DependencyInjection.framework */; };
+		2D4D1722D2338A632AFE262E /* Pods_CartCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D070AFA9BA7476FC96344D7A /* Pods_CartCore.framework */; };
+		63314B9396AC4CD28464CE2B /* Pods_CartExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72886DE9798CA10803466A41 /* Pods_CartExercise.framework */; };
+		7895A5B1EABEECB9EA99EFA7 /* Pods_CartBackendMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C9AC64DCFFF23508C447AD /* Pods_CartBackendMock.framework */; };
+		F11E4E072E8ED07100164C39 /* CartSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4DFE2E8ED07100164C39 /* CartSDK.framework */; };
+		F11E4E112E8ED07100164C39 /* CartSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4DFE2E8ED07100164C39 /* CartSDK.framework */; };
+		F11E4E122E8ED07100164C39 /* CartSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4DFE2E8ED07100164C39 /* CartSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F11E4E282E8ED0AA00164C39 /* CartBackendMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E1F2E8ED0A900164C39 /* CartBackendMock.framework */; };
+		F11E4E322E8ED0AA00164C39 /* CartBackendMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E1F2E8ED0A900164C39 /* CartBackendMock.framework */; };
+		F11E4E332E8ED0AA00164C39 /* CartBackendMock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E1F2E8ED0A900164C39 /* CartBackendMock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F11E4E482E8ED0BC00164C39 /* CartCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */; };
+		F11E4E522E8ED0BC00164C39 /* CartCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */; };
+		F11E4E532E8ED0BC00164C39 /* CartCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F11E4E632E8ED21800164C39 /* CartCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */; };
+		F11E4E642E8ED21800164C39 /* CartCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F11E4E682E8ED22100164C39 /* CartCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */; };
+		F11E4E692E8ED22100164C39 /* CartCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F12731DB2E9271CD00814D39 /* DependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12731D22E9271CC00814D39 /* DependencyInjection.framework */; };
+		F12731E52E9271CD00814D39 /* DependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12731D22E9271CC00814D39 /* DependencyInjection.framework */; };
+		F12731E62E9271CD00814D39 /* DependencyInjection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12731D22E9271CC00814D39 /* DependencyInjection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F12732222E92735200814D39 /* NetworkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; };
+		F127322C2E92735200814D39 /* NetworkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; };
+		F127322D2E92735200814D39 /* NetworkingCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F12732662E9274C100814D39 /* BackendCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127325D2E9274C000814D39 /* BackendCore.framework */; };
+		F12732702E9274C100814D39 /* BackendCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127325D2E9274C000814D39 /* BackendCore.framework */; };
+		F12732712E9274C100814D39 /* BackendCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F127325D2E9274C000814D39 /* BackendCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F12732EF2E9278C300814D39 /* HttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732E62E9278C200814D39 /* HttpClient.framework */; };
+		F12732F92E9278C300814D39 /* HttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732E62E9278C200814D39 /* HttpClient.framework */; };
+		F12732FA2E9278C300814D39 /* HttpClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12732E62E9278C200814D39 /* HttpClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F127331C2E927E4A00814D39 /* NetworkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; };
+		F127331D2E927E4A00814D39 /* NetworkingCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F12733212E927E6400814D39 /* NetworkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; };
+		F12733222E927E6400814D39 /* NetworkingCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F12733262E92809300814D39 /* DependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12731D22E9271CC00814D39 /* DependencyInjection.framework */; };
+		F12733272E92809300814D39 /* DependencyInjection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12731D22E9271CC00814D39 /* DependencyInjection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F127332A2E9280A200814D39 /* BackendCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F127325D2E9274C000814D39 /* BackendCore.framework */; };
+		F127332B2E9280A200814D39 /* BackendCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F127325D2E9274C000814D39 /* BackendCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F127332E2E9280AC00814D39 /* HttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732E62E9278C200814D39 /* HttpClient.framework */; };
+		F127332F2E9280AC00814D39 /* HttpClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12732E62E9278C200814D39 /* HttpClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F12733442E9285B200814D39 /* NetworkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; };
+		F12733452E9285B200814D39 /* NetworkingCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F12733482E92867800814D39 /* NetworkingCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; };
+		F12733492E92867800814D39 /* NetworkingCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F12732192E92735100814D39 /* NetworkingCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F2DD8D630C5DA5522DE21DD1 /* Pods_CartSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217EC8EFA0B7527B03E886B7 /* Pods_CartSDK.framework */; };
+		F4325FCC3A6F5AECBCB10CDF /* Pods_BackendCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB7564BED6A15DF0044CD96 /* Pods_BackendCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F11E4E082E8ED07100164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11E4DFD2E8ED07100164C39;
+			remoteInfo = CartSDK;
+		};
+		F11E4E0A2E8ED07100164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14492002E8ECD4300A0F074;
+			remoteInfo = CartExercise;
+		};
+		F11E4E0F2E8ED07100164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11E4DFD2E8ED07100164C39;
+			remoteInfo = CartSDK;
+		};
+		F11E4E292E8ED0AA00164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11E4E1E2E8ED0A900164C39;
+			remoteInfo = CartBackendMock;
+		};
+		F11E4E2B2E8ED0AA00164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14492002E8ECD4300A0F074;
+			remoteInfo = CartExercise;
+		};
+		F11E4E302E8ED0AA00164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11E4E1E2E8ED0A900164C39;
+			remoteInfo = CartBackendMock;
+		};
+		F11E4E492E8ED0BC00164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11E4E3E2E8ED0BB00164C39;
+			remoteInfo = CartCore;
+		};
+		F11E4E4B2E8ED0BC00164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14492002E8ECD4300A0F074;
+			remoteInfo = CartExercise;
+		};
+		F11E4E502E8ED0BC00164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11E4E3E2E8ED0BB00164C39;
+			remoteInfo = CartCore;
+		};
+		F11E4E652E8ED21800164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11E4E3E2E8ED0BB00164C39;
+			remoteInfo = CartCore;
+		};
+		F11E4E6A2E8ED22100164C39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F11E4E3E2E8ED0BB00164C39;
+			remoteInfo = CartCore;
+		};
+		F12731DC2E9271CD00814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12731D12E9271CC00814D39;
+			remoteInfo = DependencyInjection;
+		};
+		F12731DE2E9271CD00814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14492002E8ECD4300A0F074;
+			remoteInfo = CartExercise;
+		};
+		F12731E32E9271CD00814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12731D12E9271CC00814D39;
+			remoteInfo = DependencyInjection;
+		};
+		F12732232E92735200814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732182E92735100814D39;
+			remoteInfo = NetworkingCore;
+		};
+		F12732252E92735200814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14492002E8ECD4300A0F074;
+			remoteInfo = CartExercise;
+		};
+		F127322A2E92735200814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732182E92735100814D39;
+			remoteInfo = NetworkingCore;
+		};
+		F12732672E9274C100814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F127325C2E9274C000814D39;
+			remoteInfo = BackendCore;
+		};
+		F12732692E9274C100814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14492002E8ECD4300A0F074;
+			remoteInfo = CartExercise;
+		};
+		F127326E2E9274C100814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F127325C2E9274C000814D39;
+			remoteInfo = BackendCore;
+		};
+		F12732F02E9278C300814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732E52E9278C200814D39;
+			remoteInfo = HttpClient;
+		};
+		F12732F22E9278C300814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F14492002E8ECD4300A0F074;
+			remoteInfo = CartExercise;
+		};
+		F12732F72E9278C300814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732E52E9278C200814D39;
+			remoteInfo = HttpClient;
+		};
+		F127331E2E927E4A00814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732182E92735100814D39;
+			remoteInfo = NetworkingCore;
+		};
+		F12733232E927E6400814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732182E92735100814D39;
+			remoteInfo = NetworkingCore;
+		};
+		F12733282E92809300814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12731D12E9271CC00814D39;
+			remoteInfo = DependencyInjection;
+		};
+		F127332C2E9280A200814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F127325C2E9274C000814D39;
+			remoteInfo = BackendCore;
+		};
+		F12733302E9280AC00814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732E52E9278C200814D39;
+			remoteInfo = HttpClient;
+		};
+		F12733462E9285B200814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732182E92735100814D39;
+			remoteInfo = NetworkingCore;
+		};
+		F127334A2E92867800814D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F12732182E92735100814D39;
+			remoteInfo = NetworkingCore;
+		};
 		F14492182E8ECD4600A0F074 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F14491F92E8ECD4300A0F074 /* Project object */;
@@ -27,13 +282,114 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F11E4E132E8ED07100164C39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F12732712E9274C100814D39 /* BackendCore.framework in Embed Frameworks */,
+				F11E4E532E8ED0BC00164C39 /* CartCore.framework in Embed Frameworks */,
+				F127322D2E92735200814D39 /* NetworkingCore.framework in Embed Frameworks */,
+				F11E4E122E8ED07100164C39 /* CartSDK.framework in Embed Frameworks */,
+				F12732FA2E9278C300814D39 /* HttpClient.framework in Embed Frameworks */,
+				F11E4E332E8ED0AA00164C39 /* CartBackendMock.framework in Embed Frameworks */,
+				F12731E62E9271CD00814D39 /* DependencyInjection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E672E8ED21800164C39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F11E4E642E8ED21800164C39 /* CartCore.framework in Embed Frameworks */,
+				F127332F2E9280AC00814D39 /* HttpClient.framework in Embed Frameworks */,
+				F12733452E9285B200814D39 /* NetworkingCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E6C2E8ED22100164C39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F127332B2E9280A200814D39 /* BackendCore.framework in Embed Frameworks */,
+				F11E4E692E8ED22100164C39 /* CartCore.framework in Embed Frameworks */,
+				F12733492E92867800814D39 /* NetworkingCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12733202E927E4A00814D39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F127331D2E927E4A00814D39 /* NetworkingCore.framework in Embed Frameworks */,
+				F12733272E92809300814D39 /* DependencyInjection.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12733252E927E6400814D39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F12733222E927E6400814D39 /* NetworkingCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		06EC534913851A8C0B194664 /* Pods_CartExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F67AFF38334A11DA9FD4F72 /* Pods-CartExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartExercise.release.xcconfig"; path = "Target Support Files/Pods-CartExercise/Pods-CartExercise.release.xcconfig"; sourceTree = "<group>"; };
-		7570484C451D29E5B8059093 /* Pods-CartExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartExercise.debug.xcconfig"; path = "Target Support Files/Pods-CartExercise/Pods-CartExercise.debug.xcconfig"; sourceTree = "<group>"; };
+		0827C56A90993E8990CA6E41 /* Pods_DependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1195131562B78A7F73B4DDAD /* Pods-HttpClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpClient.release.xcconfig"; path = "Target Support Files/Pods-HttpClient/Pods-HttpClient.release.xcconfig"; sourceTree = "<group>"; };
+		17C9AC64DCFFF23508C447AD /* Pods_CartBackendMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartBackendMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DE17819AD35C9351E9A34AD /* Pods-CartExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartExercise.release.xcconfig"; path = "Target Support Files/Pods-CartExercise/Pods-CartExercise.release.xcconfig"; sourceTree = "<group>"; };
+		217EC8EFA0B7527B03E886B7 /* Pods_CartSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDCC264F7093C76131E847C /* Pods-CartBackendMock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartBackendMock.release.xcconfig"; path = "Target Support Files/Pods-CartBackendMock/Pods-CartBackendMock.release.xcconfig"; sourceTree = "<group>"; };
+		40884089F5DEFA61B3EC6971 /* Pods-CartCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartCore.debug.xcconfig"; path = "Target Support Files/Pods-CartCore/Pods-CartCore.debug.xcconfig"; sourceTree = "<group>"; };
+		4D08E70F2FB5B644EF543C8D /* Pods-BackendCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackendCore.release.xcconfig"; path = "Target Support Files/Pods-BackendCore/Pods-BackendCore.release.xcconfig"; sourceTree = "<group>"; };
+		72886DE9798CA10803466A41 /* Pods_CartExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		797F2175E164D9C8B67813B6 /* Pods_HttpClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HttpClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8403A2B32DF6CCD4F615A110 /* Pods-CartExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartExercise.debug.xcconfig"; path = "Target Support Files/Pods-CartExercise/Pods-CartExercise.debug.xcconfig"; sourceTree = "<group>"; };
+		B14D9EA9009E832D4BA6DC17 /* Pods-CartSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartSDK.release.xcconfig"; path = "Target Support Files/Pods-CartSDK/Pods-CartSDK.release.xcconfig"; sourceTree = "<group>"; };
+		B25F92709B0486389DE140A0 /* Pods-DependencyInjection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DependencyInjection.release.xcconfig"; path = "Target Support Files/Pods-DependencyInjection/Pods-DependencyInjection.release.xcconfig"; sourceTree = "<group>"; };
+		C14D24235540C28F2F52CD19 /* Pods-BackendCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackendCore.debug.xcconfig"; path = "Target Support Files/Pods-BackendCore/Pods-BackendCore.debug.xcconfig"; sourceTree = "<group>"; };
+		C2C217874404A318859BBC86 /* Pods-DependencyInjection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DependencyInjection.debug.xcconfig"; path = "Target Support Files/Pods-DependencyInjection/Pods-DependencyInjection.debug.xcconfig"; sourceTree = "<group>"; };
+		C46B7E58FF53D7A202CA935D /* Pods-CartCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartCore.release.xcconfig"; path = "Target Support Files/Pods-CartCore/Pods-CartCore.release.xcconfig"; sourceTree = "<group>"; };
+		CC105F7E61CC1B3E797017A0 /* Pods-HttpClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpClient.debug.xcconfig"; path = "Target Support Files/Pods-HttpClient/Pods-HttpClient.debug.xcconfig"; sourceTree = "<group>"; };
+		D070AFA9BA7476FC96344D7A /* Pods_CartCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB7564BED6A15DF0044CD96 /* Pods_BackendCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackendCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11E4DFE2E8ED07100164C39 /* CartSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11E4E062E8ED07100164C39 /* CartSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11E4E1F2E8ED0A900164C39 /* CartBackendMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartBackendMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11E4E272E8ED0AA00164C39 /* CartBackendMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartBackendMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CartCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11E4E472E8ED0BC00164C39 /* CartCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12731D22E9271CC00814D39 /* DependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12731DA2E9271CD00814D39 /* DependencyInjectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependencyInjectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12732192E92735100814D39 /* NetworkingCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkingCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12732212E92735100814D39 /* NetworkingCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F127325D2E9274C000814D39 /* BackendCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BackendCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12732652E9274C100814D39 /* BackendCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackendCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12732E62E9278C200814D39 /* HttpClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HttpClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12732EE2E9278C300814D39 /* HttpClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HttpClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14492012E8ECD4300A0F074 /* CartExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14492172E8ECD4600A0F074 /* CartExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14492212E8ECD4600A0F074 /* CartExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F934A437BB829F3B58E7706D /* Pods-CartSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartSDK.debug.xcconfig"; path = "Target Support Files/Pods-CartSDK/Pods-CartSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		FE3AA75A5AA4FAF5339C0BE2 /* Pods-CartBackendMock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartBackendMock.debug.xcconfig"; path = "Target Support Files/Pods-CartBackendMock/Pods-CartBackendMock.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -47,6 +403,76 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F11E4DFF2E8ED07100164C39 /* CartSDK */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CartSDK;
+			sourceTree = "<group>";
+		};
+		F11E4E0C2E8ED07100164C39 /* CartSDKTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CartSDKTests;
+			sourceTree = "<group>";
+		};
+		F11E4E202E8ED0A900164C39 /* CartBackendMock */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CartBackendMock;
+			sourceTree = "<group>";
+		};
+		F11E4E2D2E8ED0AA00164C39 /* CartBackendMockTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CartBackendMockTests;
+			sourceTree = "<group>";
+		};
+		F11E4E402E8ED0BB00164C39 /* CartCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CartCore;
+			sourceTree = "<group>";
+		};
+		F11E4E4D2E8ED0BC00164C39 /* CartCoreTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CartCoreTests;
+			sourceTree = "<group>";
+		};
+		F12731D32E9271CC00814D39 /* DependencyInjection */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		F12731E02E9271CD00814D39 /* DependencyInjectionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DependencyInjectionTests;
+			sourceTree = "<group>";
+		};
+		F127321A2E92735100814D39 /* NetworkingCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NetworkingCore;
+			sourceTree = "<group>";
+		};
+		F12732272E92735200814D39 /* NetworkingCoreTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NetworkingCoreTests;
+			sourceTree = "<group>";
+		};
+		F127325E2E9274C000814D39 /* BackendCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BackendCore;
+			sourceTree = "<group>";
+		};
+		F127326B2E9274C100814D39 /* BackendCoreTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BackendCoreTests;
+			sourceTree = "<group>";
+		};
+		F12732E72E9278C200814D39 /* HttpClient */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HttpClient;
+			sourceTree = "<group>";
+		};
+		F12732F42E9278C300814D39 /* HttpClientTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HttpClientTests;
+			sourceTree = "<group>";
+		};
 		F14492032E8ECD4300A0F074 /* CartExercise */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -57,26 +483,149 @@
 		};
 		F144921A2E8ECD4600A0F074 /* CartExerciseTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = CartExerciseTests;
 			sourceTree = "<group>";
 		};
 		F14492242E8ECD4600A0F074 /* CartExerciseUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = CartExerciseUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F11E4DFB2E8ED07100164C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11E4E632E8ED21800164C39 /* CartCore.framework in Frameworks */,
+				F127332E2E9280AC00814D39 /* HttpClient.framework in Frameworks */,
+				F12733442E9285B200814D39 /* NetworkingCore.framework in Frameworks */,
+				F2DD8D630C5DA5522DE21DD1 /* Pods_CartSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E032E8ED07100164C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11E4E072E8ED07100164C39 /* CartSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E1C2E8ED0A900164C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F127332A2E9280A200814D39 /* BackendCore.framework in Frameworks */,
+				F11E4E682E8ED22100164C39 /* CartCore.framework in Frameworks */,
+				F12733482E92867800814D39 /* NetworkingCore.framework in Frameworks */,
+				7895A5B1EABEECB9EA99EFA7 /* Pods_CartBackendMock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E242E8ED0AA00164C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11E4E282E8ED0AA00164C39 /* CartBackendMock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E3C2E8ED0BB00164C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D4D1722D2338A632AFE262E /* Pods_CartCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E442E8ED0BC00164C39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11E4E482E8ED0BC00164C39 /* CartCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12731CF2E9271CC00814D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F3F5C8FE78F565B8759E02 /* Pods_DependencyInjection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12731D72E9271CD00814D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12731DB2E9271CD00814D39 /* DependencyInjection.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732162E92735100814D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F127321E2E92735100814D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12732222E92735200814D39 /* NetworkingCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F127325A2E9274C000814D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F127331C2E927E4A00814D39 /* NetworkingCore.framework in Frameworks */,
+				F12733262E92809300814D39 /* DependencyInjection.framework in Frameworks */,
+				F4325FCC3A6F5AECBCB10CDF /* Pods_BackendCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732622E9274C100814D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12732662E9274C100814D39 /* BackendCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732E32E9278C200814D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12733212E927E6400814D39 /* NetworkingCore.framework in Frameworks */,
+				06352C67A3075CFCB2932167 /* Pods_HttpClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732EB2E9278C300814D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12732EF2E9278C300814D39 /* HttpClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F14491FE2E8ECD4300A0F074 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B49A40416D63264C0B99254F /* Pods_CartExercise.framework in Frameworks */,
+				F12731E52E9271CD00814D39 /* DependencyInjection.framework in Frameworks */,
+				F12732702E9274C100814D39 /* BackendCore.framework in Frameworks */,
+				F11E4E522E8ED0BC00164C39 /* CartCore.framework in Frameworks */,
+				F11E4E322E8ED0AA00164C39 /* CartBackendMock.framework in Frameworks */,
+				F11E4E112E8ED07100164C39 /* CartSDK.framework in Frameworks */,
+				F127322C2E92735200814D39 /* NetworkingCore.framework in Frameworks */,
+				F12732F92E9278C300814D39 /* HttpClient.framework in Frameworks */,
+				63314B9396AC4CD28464CE2B /* Pods_CartExercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,10 +646,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B95B02EBC64338A5412B1082 /* Frameworks */ = {
+		016A1DEBBC989F4CEB560AC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				06EC534913851A8C0B194664 /* Pods_CartExercise.framework */,
+				DAB7564BED6A15DF0044CD96 /* Pods_BackendCore.framework */,
+				17C9AC64DCFFF23508C447AD /* Pods_CartBackendMock.framework */,
+				D070AFA9BA7476FC96344D7A /* Pods_CartCore.framework */,
+				72886DE9798CA10803466A41 /* Pods_CartExercise.framework */,
+				217EC8EFA0B7527B03E886B7 /* Pods_CartSDK.framework */,
+				0827C56A90993E8990CA6E41 /* Pods_DependencyInjection.framework */,
+				797F2175E164D9C8B67813B6 /* Pods_HttpClient.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,10 +663,21 @@
 		E023C5E2AAF21E82056AEF86 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7570484C451D29E5B8059093 /* Pods-CartExercise.debug.xcconfig */,
-				1F67AFF38334A11DA9FD4F72 /* Pods-CartExercise.release.xcconfig */,
+				C14D24235540C28F2F52CD19 /* Pods-BackendCore.debug.xcconfig */,
+				4D08E70F2FB5B644EF543C8D /* Pods-BackendCore.release.xcconfig */,
+				FE3AA75A5AA4FAF5339C0BE2 /* Pods-CartBackendMock.debug.xcconfig */,
+				3CDCC264F7093C76131E847C /* Pods-CartBackendMock.release.xcconfig */,
+				40884089F5DEFA61B3EC6971 /* Pods-CartCore.debug.xcconfig */,
+				C46B7E58FF53D7A202CA935D /* Pods-CartCore.release.xcconfig */,
+				8403A2B32DF6CCD4F615A110 /* Pods-CartExercise.debug.xcconfig */,
+				1DE17819AD35C9351E9A34AD /* Pods-CartExercise.release.xcconfig */,
+				F934A437BB829F3B58E7706D /* Pods-CartSDK.debug.xcconfig */,
+				B14D9EA9009E832D4BA6DC17 /* Pods-CartSDK.release.xcconfig */,
+				C2C217874404A318859BBC86 /* Pods-DependencyInjection.debug.xcconfig */,
+				B25F92709B0486389DE140A0 /* Pods-DependencyInjection.release.xcconfig */,
+				CC105F7E61CC1B3E797017A0 /* Pods-HttpClient.debug.xcconfig */,
+				1195131562B78A7F73B4DDAD /* Pods-HttpClient.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -121,9 +687,23 @@
 				F14492032E8ECD4300A0F074 /* CartExercise */,
 				F144921A2E8ECD4600A0F074 /* CartExerciseTests */,
 				F14492242E8ECD4600A0F074 /* CartExerciseUITests */,
+				F11E4DFF2E8ED07100164C39 /* CartSDK */,
+				F11E4E0C2E8ED07100164C39 /* CartSDKTests */,
+				F11E4E202E8ED0A900164C39 /* CartBackendMock */,
+				F11E4E2D2E8ED0AA00164C39 /* CartBackendMockTests */,
+				F11E4E402E8ED0BB00164C39 /* CartCore */,
+				F11E4E4D2E8ED0BC00164C39 /* CartCoreTests */,
+				F12731D32E9271CC00814D39 /* DependencyInjection */,
+				F12731E02E9271CD00814D39 /* DependencyInjectionTests */,
+				F127321A2E92735100814D39 /* NetworkingCore */,
+				F12732272E92735200814D39 /* NetworkingCoreTests */,
+				F127325E2E9274C000814D39 /* BackendCore */,
+				F127326B2E9274C100814D39 /* BackendCoreTests */,
+				F12732E72E9278C200814D39 /* HttpClient */,
+				F12732F42E9278C300814D39 /* HttpClientTests */,
 				F14492022E8ECD4300A0F074 /* Products */,
 				E023C5E2AAF21E82056AEF86 /* Pods */,
-				B95B02EBC64338A5412B1082 /* Frameworks */,
+				016A1DEBBC989F4CEB560AC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,25 +713,420 @@
 				F14492012E8ECD4300A0F074 /* CartExercise.app */,
 				F14492172E8ECD4600A0F074 /* CartExerciseTests.xctest */,
 				F14492212E8ECD4600A0F074 /* CartExerciseUITests.xctest */,
+				F11E4DFE2E8ED07100164C39 /* CartSDK.framework */,
+				F11E4E062E8ED07100164C39 /* CartSDKTests.xctest */,
+				F11E4E1F2E8ED0A900164C39 /* CartBackendMock.framework */,
+				F11E4E272E8ED0AA00164C39 /* CartBackendMockTests.xctest */,
+				F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */,
+				F11E4E472E8ED0BC00164C39 /* CartCoreTests.xctest */,
+				F12731D22E9271CC00814D39 /* DependencyInjection.framework */,
+				F12731DA2E9271CD00814D39 /* DependencyInjectionTests.xctest */,
+				F12732192E92735100814D39 /* NetworkingCore.framework */,
+				F12732212E92735100814D39 /* NetworkingCoreTests.xctest */,
+				F127325D2E9274C000814D39 /* BackendCore.framework */,
+				F12732652E9274C100814D39 /* BackendCoreTests.xctest */,
+				F12732E62E9278C200814D39 /* HttpClient.framework */,
+				F12732EE2E9278C300814D39 /* HttpClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		F11E4DF92E8ED07100164C39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E1A2E8ED0A900164C39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E3A2E8ED0BB00164C39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12731CD2E9271CC00814D39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732142E92735100814D39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732582E9274C000814D39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732E12E9278C200814D39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		F14492002E8ECD4300A0F074 /* CartExercise */ = {
+		F11E4DFD2E8ED07100164C39 /* CartSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F144922A2E8ECD4600A0F074 /* Build configuration list for PBXNativeTarget "CartExercise" */;
+			buildConfigurationList = F11E4E182E8ED07100164C39 /* Build configuration list for PBXNativeTarget "CartSDK" */;
 			buildPhases = (
-				D651012E1D6F8A5C6886249E /* [CP] Check Pods Manifest.lock */,
-				F14491FD2E8ECD4300A0F074 /* Sources */,
-				F14491FE2E8ECD4300A0F074 /* Frameworks */,
-				F14491FF2E8ECD4300A0F074 /* Resources */,
+				629C9FFD9A25AE0124C6002A /* [CP] Check Pods Manifest.lock */,
+				F11E4DF92E8ED07100164C39 /* Headers */,
+				F11E4DFA2E8ED07100164C39 /* Sources */,
+				F11E4DFB2E8ED07100164C39 /* Frameworks */,
+				F11E4DFC2E8ED07100164C39 /* Resources */,
+				F11E4E672E8ED21800164C39 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F11E4E662E8ED21800164C39 /* PBXTargetDependency */,
+				F12733312E9280AC00814D39 /* PBXTargetDependency */,
+				F12733472E9285B200814D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F11E4DFF2E8ED07100164C39 /* CartSDK */,
+			);
+			name = CartSDK;
+			productName = CartSDK;
+			productReference = F11E4DFE2E8ED07100164C39 /* CartSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F11E4E052E8ED07100164C39 /* CartSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11E4E192E8ED07100164C39 /* Build configuration list for PBXNativeTarget "CartSDKTests" */;
+			buildPhases = (
+				F11E4E022E8ED07100164C39 /* Sources */,
+				F11E4E032E8ED07100164C39 /* Frameworks */,
+				F11E4E042E8ED07100164C39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F11E4E092E8ED07100164C39 /* PBXTargetDependency */,
+				F11E4E0B2E8ED07100164C39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F11E4E0C2E8ED07100164C39 /* CartSDKTests */,
+			);
+			name = CartSDKTests;
+			productName = CartSDKTests;
+			productReference = F11E4E062E8ED07100164C39 /* CartSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F11E4E1E2E8ED0A900164C39 /* CartBackendMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11E4E342E8ED0AA00164C39 /* Build configuration list for PBXNativeTarget "CartBackendMock" */;
+			buildPhases = (
+				CB7EAA19895409D398608D53 /* [CP] Check Pods Manifest.lock */,
+				F11E4E1A2E8ED0A900164C39 /* Headers */,
+				F11E4E1B2E8ED0A900164C39 /* Sources */,
+				F11E4E1C2E8ED0A900164C39 /* Frameworks */,
+				F11E4E1D2E8ED0A900164C39 /* Resources */,
+				F11E4E6C2E8ED22100164C39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F11E4E6B2E8ED22100164C39 /* PBXTargetDependency */,
+				F127332D2E9280A200814D39 /* PBXTargetDependency */,
+				F127334B2E92867800814D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F11E4E202E8ED0A900164C39 /* CartBackendMock */,
+			);
+			name = CartBackendMock;
+			productName = CartBackendMock;
+			productReference = F11E4E1F2E8ED0A900164C39 /* CartBackendMock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F11E4E262E8ED0AA00164C39 /* CartBackendMockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11E4E372E8ED0AA00164C39 /* Build configuration list for PBXNativeTarget "CartBackendMockTests" */;
+			buildPhases = (
+				F11E4E232E8ED0AA00164C39 /* Sources */,
+				F11E4E242E8ED0AA00164C39 /* Frameworks */,
+				F11E4E252E8ED0AA00164C39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F11E4E2A2E8ED0AA00164C39 /* PBXTargetDependency */,
+				F11E4E2C2E8ED0AA00164C39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F11E4E2D2E8ED0AA00164C39 /* CartBackendMockTests */,
+			);
+			name = CartBackendMockTests;
+			productName = CartBackendMockTests;
+			productReference = F11E4E272E8ED0AA00164C39 /* CartBackendMockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F11E4E3E2E8ED0BB00164C39 /* CartCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11E4E542E8ED0BC00164C39 /* Build configuration list for PBXNativeTarget "CartCore" */;
+			buildPhases = (
+				F9BB209FA073FE0B211C1E8A /* [CP] Check Pods Manifest.lock */,
+				F11E4E3A2E8ED0BB00164C39 /* Headers */,
+				F11E4E3B2E8ED0BB00164C39 /* Sources */,
+				F11E4E3C2E8ED0BB00164C39 /* Frameworks */,
+				F11E4E3D2E8ED0BB00164C39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F11E4E402E8ED0BB00164C39 /* CartCore */,
+			);
+			name = CartCore;
+			productName = CartCore;
+			productReference = F11E4E3F2E8ED0BB00164C39 /* CartCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F11E4E462E8ED0BC00164C39 /* CartCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11E4E572E8ED0BC00164C39 /* Build configuration list for PBXNativeTarget "CartCoreTests" */;
+			buildPhases = (
+				F11E4E432E8ED0BC00164C39 /* Sources */,
+				F11E4E442E8ED0BC00164C39 /* Frameworks */,
+				F11E4E452E8ED0BC00164C39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F11E4E4A2E8ED0BC00164C39 /* PBXTargetDependency */,
+				F11E4E4C2E8ED0BC00164C39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F11E4E4D2E8ED0BC00164C39 /* CartCoreTests */,
+			);
+			name = CartCoreTests;
+			productName = CartCoreTests;
+			productReference = F11E4E472E8ED0BC00164C39 /* CartCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F12731D12E9271CC00814D39 /* DependencyInjection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12731EB2E9271CD00814D39 /* Build configuration list for PBXNativeTarget "DependencyInjection" */;
+			buildPhases = (
+				C991F17962DB89C730E9D8E9 /* [CP] Check Pods Manifest.lock */,
+				F12731CD2E9271CC00814D39 /* Headers */,
+				F12731CE2E9271CC00814D39 /* Sources */,
+				F12731CF2E9271CC00814D39 /* Frameworks */,
+				F12731D02E9271CC00814D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F12731D32E9271CC00814D39 /* DependencyInjection */,
+			);
+			name = DependencyInjection;
+			productName = DependencyInjection;
+			productReference = F12731D22E9271CC00814D39 /* DependencyInjection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F12731D92E9271CD00814D39 /* DependencyInjectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12731EC2E9271CD00814D39 /* Build configuration list for PBXNativeTarget "DependencyInjectionTests" */;
+			buildPhases = (
+				F12731D62E9271CD00814D39 /* Sources */,
+				F12731D72E9271CD00814D39 /* Frameworks */,
+				F12731D82E9271CD00814D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F12731DD2E9271CD00814D39 /* PBXTargetDependency */,
+				F12731DF2E9271CD00814D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F12731E02E9271CD00814D39 /* DependencyInjectionTests */,
+			);
+			name = DependencyInjectionTests;
+			productName = DependencyInjectionTests;
+			productReference = F12731DA2E9271CD00814D39 /* DependencyInjectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F12732182E92735100814D39 /* NetworkingCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F127322E2E92735200814D39 /* Build configuration list for PBXNativeTarget "NetworkingCore" */;
+			buildPhases = (
+				F12732142E92735100814D39 /* Headers */,
+				F12732152E92735100814D39 /* Sources */,
+				F12732162E92735100814D39 /* Frameworks */,
+				F12732172E92735100814D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F127321A2E92735100814D39 /* NetworkingCore */,
+			);
+			name = NetworkingCore;
+			productName = NetworkingCore;
+			productReference = F12732192E92735100814D39 /* NetworkingCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F12732202E92735100814D39 /* NetworkingCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12732312E92735200814D39 /* Build configuration list for PBXNativeTarget "NetworkingCoreTests" */;
+			buildPhases = (
+				F127321D2E92735100814D39 /* Sources */,
+				F127321E2E92735100814D39 /* Frameworks */,
+				F127321F2E92735100814D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F12732242E92735200814D39 /* PBXTargetDependency */,
+				F12732262E92735200814D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F12732272E92735200814D39 /* NetworkingCoreTests */,
+			);
+			name = NetworkingCoreTests;
+			productName = NetworkingCoreTests;
+			productReference = F12732212E92735100814D39 /* NetworkingCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F127325C2E9274C000814D39 /* BackendCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12732722E9274C100814D39 /* Build configuration list for PBXNativeTarget "BackendCore" */;
+			buildPhases = (
+				D73D8E04E6F7094308564637 /* [CP] Check Pods Manifest.lock */,
+				F12732582E9274C000814D39 /* Headers */,
+				F12732592E9274C000814D39 /* Sources */,
+				F127325A2E9274C000814D39 /* Frameworks */,
+				F127325B2E9274C000814D39 /* Resources */,
+				F12733202E927E4A00814D39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F127331F2E927E4A00814D39 /* PBXTargetDependency */,
+				F12733292E92809300814D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F127325E2E9274C000814D39 /* BackendCore */,
+			);
+			name = BackendCore;
+			productName = BackendCore;
+			productReference = F127325D2E9274C000814D39 /* BackendCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F12732642E9274C100814D39 /* BackendCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12732752E9274C100814D39 /* Build configuration list for PBXNativeTarget "BackendCoreTests" */;
+			buildPhases = (
+				F12732612E9274C100814D39 /* Sources */,
+				F12732622E9274C100814D39 /* Frameworks */,
+				F12732632E9274C100814D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F12732682E9274C100814D39 /* PBXTargetDependency */,
+				F127326A2E9274C100814D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F127326B2E9274C100814D39 /* BackendCoreTests */,
+			);
+			name = BackendCoreTests;
+			productName = BackendCoreTests;
+			productReference = F12732652E9274C100814D39 /* BackendCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F12732E52E9278C200814D39 /* HttpClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12732FB2E9278C300814D39 /* Build configuration list for PBXNativeTarget "HttpClient" */;
+			buildPhases = (
+				28DEE1A4AB826A9C4BE63E87 /* [CP] Check Pods Manifest.lock */,
+				F12732E12E9278C200814D39 /* Headers */,
+				F12732E22E9278C200814D39 /* Sources */,
+				F12732E32E9278C200814D39 /* Frameworks */,
+				F12732E42E9278C200814D39 /* Resources */,
+				F12733252E927E6400814D39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F12733242E927E6400814D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F12732E72E9278C200814D39 /* HttpClient */,
+			);
+			name = HttpClient;
+			productName = HttpClient;
+			productReference = F12732E62E9278C200814D39 /* HttpClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F12732ED2E9278C300814D39 /* HttpClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12732FE2E9278C300814D39 /* Build configuration list for PBXNativeTarget "HttpClientTests" */;
+			buildPhases = (
+				F12732EA2E9278C300814D39 /* Sources */,
+				F12732EB2E9278C300814D39 /* Frameworks */,
+				F12732EC2E9278C300814D39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F12732F12E9278C300814D39 /* PBXTargetDependency */,
+				F12732F32E9278C300814D39 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F12732F42E9278C300814D39 /* HttpClientTests */,
+			);
+			name = HttpClientTests;
+			productName = HttpClientTests;
+			productReference = F12732EE2E9278C300814D39 /* HttpClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F14492002E8ECD4300A0F074 /* CartExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F144922A2E8ECD4600A0F074 /* Build configuration list for PBXNativeTarget "CartExercise" */;
+			buildPhases = (
+				E0CD82480A71A69B72ADC6C1 /* [CP] Check Pods Manifest.lock */,
+				F14491FD2E8ECD4300A0F074 /* Sources */,
+				F14491FE2E8ECD4300A0F074 /* Frameworks */,
+				F14491FF2E8ECD4300A0F074 /* Resources */,
+				F11E4E132E8ED07100164C39 /* Embed Frameworks */,
+				47E8B22DA562CCA107339106 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F11E4E102E8ED07100164C39 /* PBXTargetDependency */,
+				F11E4E312E8ED0AA00164C39 /* PBXTargetDependency */,
+				F11E4E512E8ED0BC00164C39 /* PBXTargetDependency */,
+				F12731E42E9271CD00814D39 /* PBXTargetDependency */,
+				F127322B2E92735200814D39 /* PBXTargetDependency */,
+				F127326F2E9274C100814D39 /* PBXTargetDependency */,
+				F12732F82E9278C300814D39 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				F14492032E8ECD4300A0F074 /* CartExercise */,
@@ -213,6 +1188,56 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					F11E4DFD2E8ED07100164C39 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					F11E4E052E8ED07100164C39 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = F14492002E8ECD4300A0F074;
+					};
+					F11E4E1E2E8ED0A900164C39 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					F11E4E262E8ED0AA00164C39 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = F14492002E8ECD4300A0F074;
+					};
+					F11E4E3E2E8ED0BB00164C39 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					F11E4E462E8ED0BC00164C39 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = F14492002E8ECD4300A0F074;
+					};
+					F12731D12E9271CC00814D39 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					F12731D92E9271CD00814D39 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = F14492002E8ECD4300A0F074;
+					};
+					F12732182E92735100814D39 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					F12732202E92735100814D39 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = F14492002E8ECD4300A0F074;
+					};
+					F127325C2E9274C000814D39 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					F12732642E9274C100814D39 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = F14492002E8ECD4300A0F074;
+					};
+					F12732E52E9278C200814D39 = {
+						CreatedOnToolsVersion = 26.0;
+						LastSwiftMigration = 2600;
+					};
+					F12732ED2E9278C300814D39 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = F14492002E8ECD4300A0F074;
+					};
 					F14492002E8ECD4300A0F074 = {
 						CreatedOnToolsVersion = 26.0;
 					};
@@ -243,11 +1268,123 @@
 				F14492002E8ECD4300A0F074 /* CartExercise */,
 				F14492162E8ECD4600A0F074 /* CartExerciseTests */,
 				F14492202E8ECD4600A0F074 /* CartExerciseUITests */,
+				F11E4DFD2E8ED07100164C39 /* CartSDK */,
+				F11E4E052E8ED07100164C39 /* CartSDKTests */,
+				F11E4E1E2E8ED0A900164C39 /* CartBackendMock */,
+				F11E4E262E8ED0AA00164C39 /* CartBackendMockTests */,
+				F11E4E3E2E8ED0BB00164C39 /* CartCore */,
+				F11E4E462E8ED0BC00164C39 /* CartCoreTests */,
+				F12731D12E9271CC00814D39 /* DependencyInjection */,
+				F12731D92E9271CD00814D39 /* DependencyInjectionTests */,
+				F12732182E92735100814D39 /* NetworkingCore */,
+				F12732202E92735100814D39 /* NetworkingCoreTests */,
+				F127325C2E9274C000814D39 /* BackendCore */,
+				F12732642E9274C100814D39 /* BackendCoreTests */,
+				F12732E52E9278C200814D39 /* HttpClient */,
+				F12732ED2E9278C300814D39 /* HttpClientTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F11E4DFC2E8ED07100164C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E042E8ED07100164C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E1D2E8ED0A900164C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E252E8ED0AA00164C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E3D2E8ED0BB00164C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E452E8ED0BC00164C39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12731D02E9271CC00814D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12731D82E9271CD00814D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732172E92735100814D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F127321F2E92735100814D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F127325B2E9274C000814D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732632E9274C100814D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732E42E9278C200814D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732EC2E9278C300814D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F14491FF2E8ECD4300A0F074 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,7 +1409,138 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D651012E1D6F8A5C6886249E /* [CP] Check Pods Manifest.lock */ = {
+		28DEE1A4AB826A9C4BE63E87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HttpClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47E8B22DA562CCA107339106 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CartExercise/Pods-CartExercise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CartExercise/Pods-CartExercise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CartExercise/Pods-CartExercise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		629C9FFD9A25AE0124C6002A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CartSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C991F17962DB89C730E9D8E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DependencyInjection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB7EAA19895409D398608D53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CartBackendMock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73D8E04E6F7094308564637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BackendCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0CD82480A71A69B72ADC6C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,9 +1562,129 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F9BB209FA073FE0B211C1E8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CartCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F11E4DFA2E8ED07100164C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E022E8ED07100164C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E1B2E8ED0A900164C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E232E8ED0AA00164C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E3B2E8ED0BB00164C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F11E4E432E8ED0BC00164C39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12731CE2E9271CC00814D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12731D62E9271CD00814D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732152E92735100814D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F127321D2E92735100814D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732592E9274C000814D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732612E9274C100814D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732E22E9278C200814D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12732EA2E9278C300814D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F14491FD2E8ECD4300A0F074 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +1709,156 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F11E4E092E8ED07100164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11E4DFD2E8ED07100164C39 /* CartSDK */;
+			targetProxy = F11E4E082E8ED07100164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E0B2E8ED07100164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14492002E8ECD4300A0F074 /* CartExercise */;
+			targetProxy = F11E4E0A2E8ED07100164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E102E8ED07100164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11E4DFD2E8ED07100164C39 /* CartSDK */;
+			targetProxy = F11E4E0F2E8ED07100164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E2A2E8ED0AA00164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11E4E1E2E8ED0A900164C39 /* CartBackendMock */;
+			targetProxy = F11E4E292E8ED0AA00164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E2C2E8ED0AA00164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14492002E8ECD4300A0F074 /* CartExercise */;
+			targetProxy = F11E4E2B2E8ED0AA00164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E312E8ED0AA00164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11E4E1E2E8ED0A900164C39 /* CartBackendMock */;
+			targetProxy = F11E4E302E8ED0AA00164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E4A2E8ED0BC00164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11E4E3E2E8ED0BB00164C39 /* CartCore */;
+			targetProxy = F11E4E492E8ED0BC00164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E4C2E8ED0BC00164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14492002E8ECD4300A0F074 /* CartExercise */;
+			targetProxy = F11E4E4B2E8ED0BC00164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E512E8ED0BC00164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11E4E3E2E8ED0BB00164C39 /* CartCore */;
+			targetProxy = F11E4E502E8ED0BC00164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E662E8ED21800164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11E4E3E2E8ED0BB00164C39 /* CartCore */;
+			targetProxy = F11E4E652E8ED21800164C39 /* PBXContainerItemProxy */;
+		};
+		F11E4E6B2E8ED22100164C39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F11E4E3E2E8ED0BB00164C39 /* CartCore */;
+			targetProxy = F11E4E6A2E8ED22100164C39 /* PBXContainerItemProxy */;
+		};
+		F12731DD2E9271CD00814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12731D12E9271CC00814D39 /* DependencyInjection */;
+			targetProxy = F12731DC2E9271CD00814D39 /* PBXContainerItemProxy */;
+		};
+		F12731DF2E9271CD00814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14492002E8ECD4300A0F074 /* CartExercise */;
+			targetProxy = F12731DE2E9271CD00814D39 /* PBXContainerItemProxy */;
+		};
+		F12731E42E9271CD00814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12731D12E9271CC00814D39 /* DependencyInjection */;
+			targetProxy = F12731E32E9271CD00814D39 /* PBXContainerItemProxy */;
+		};
+		F12732242E92735200814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732182E92735100814D39 /* NetworkingCore */;
+			targetProxy = F12732232E92735200814D39 /* PBXContainerItemProxy */;
+		};
+		F12732262E92735200814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14492002E8ECD4300A0F074 /* CartExercise */;
+			targetProxy = F12732252E92735200814D39 /* PBXContainerItemProxy */;
+		};
+		F127322B2E92735200814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732182E92735100814D39 /* NetworkingCore */;
+			targetProxy = F127322A2E92735200814D39 /* PBXContainerItemProxy */;
+		};
+		F12732682E9274C100814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F127325C2E9274C000814D39 /* BackendCore */;
+			targetProxy = F12732672E9274C100814D39 /* PBXContainerItemProxy */;
+		};
+		F127326A2E9274C100814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14492002E8ECD4300A0F074 /* CartExercise */;
+			targetProxy = F12732692E9274C100814D39 /* PBXContainerItemProxy */;
+		};
+		F127326F2E9274C100814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F127325C2E9274C000814D39 /* BackendCore */;
+			targetProxy = F127326E2E9274C100814D39 /* PBXContainerItemProxy */;
+		};
+		F12732F12E9278C300814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732E52E9278C200814D39 /* HttpClient */;
+			targetProxy = F12732F02E9278C300814D39 /* PBXContainerItemProxy */;
+		};
+		F12732F32E9278C300814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F14492002E8ECD4300A0F074 /* CartExercise */;
+			targetProxy = F12732F22E9278C300814D39 /* PBXContainerItemProxy */;
+		};
+		F12732F82E9278C300814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732E52E9278C200814D39 /* HttpClient */;
+			targetProxy = F12732F72E9278C300814D39 /* PBXContainerItemProxy */;
+		};
+		F127331F2E927E4A00814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732182E92735100814D39 /* NetworkingCore */;
+			targetProxy = F127331E2E927E4A00814D39 /* PBXContainerItemProxy */;
+		};
+		F12733242E927E6400814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732182E92735100814D39 /* NetworkingCore */;
+			targetProxy = F12733232E927E6400814D39 /* PBXContainerItemProxy */;
+		};
+		F12733292E92809300814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12731D12E9271CC00814D39 /* DependencyInjection */;
+			targetProxy = F12733282E92809300814D39 /* PBXContainerItemProxy */;
+		};
+		F127332D2E9280A200814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F127325C2E9274C000814D39 /* BackendCore */;
+			targetProxy = F127332C2E9280A200814D39 /* PBXContainerItemProxy */;
+		};
+		F12733312E9280AC00814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732E52E9278C200814D39 /* HttpClient */;
+			targetProxy = F12733302E9280AC00814D39 /* PBXContainerItemProxy */;
+		};
+		F12733472E9285B200814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732182E92735100814D39 /* NetworkingCore */;
+			targetProxy = F12733462E9285B200814D39 /* PBXContainerItemProxy */;
+		};
+		F127334B2E92867800814D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F12732182E92735100814D39 /* NetworkingCore */;
+			targetProxy = F127334A2E92867800814D39 /* PBXContainerItemProxy */;
+		};
 		F14492192E8ECD4600A0F074 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F14492002E8ECD4300A0F074 /* CartExercise */;
@@ -334,13 +1872,870 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F11E4E142E8ED07100164C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F934A437BB829F3B58E7706D /* Pods-CartSDK.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F11E4E152E8ED07100164C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14D9EA9009E832D4BA6DC17 /* Pods-CartSDK.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F11E4E162E8ED07100164C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Debug;
+		};
+		F11E4E172E8ED07100164C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Release;
+		};
+		F11E4E352E8ED0AA00164C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3AA75A5AA4FAF5339C0BE2 /* Pods-CartBackendMock.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartBackendMock;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F11E4E362E8ED0AA00164C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CDCC264F7093C76131E847C /* Pods-CartBackendMock.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartBackendMock;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F11E4E382E8ED0AA00164C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartBackendMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Debug;
+		};
+		F11E4E392E8ED0AA00164C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartBackendMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Release;
+		};
+		F11E4E552E8ED0BC00164C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40884089F5DEFA61B3EC6971 /* Pods-CartCore.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F11E4E562E8ED0BC00164C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C46B7E58FF53D7A202CA935D /* Pods-CartCore.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F11E4E582E8ED0BC00164C39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Debug;
+		};
+		F11E4E592E8ED0BC00164C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Release;
+		};
+		F12731E72E9271CD00814D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C217874404A318859BBC86 /* Pods-DependencyInjection.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.DependencyInjection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F12731E82E9271CD00814D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25F92709B0486389DE140A0 /* Pods-DependencyInjection.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.DependencyInjection;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F12731E92E9271CD00814D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.DependencyInjectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Debug;
+		};
+		F12731EA2E9271CD00814D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.DependencyInjectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Release;
+		};
+		F127322F2E92735200814D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.NetworkingCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F12732302E92735200814D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.NetworkingCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F12732322E92735200814D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.NetworkingCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Debug;
+		};
+		F12732332E92735200814D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.NetworkingCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Release;
+		};
+		F12732732E9274C100814D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14D24235540C28F2F52CD19 /* Pods-BackendCore.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.BackendCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F12732742E9274C100814D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D08E70F2FB5B644EF543C8D /* Pods-BackendCore.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.BackendCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F12732762E9274C100814D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.BackendCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Debug;
+		};
+		F12732772E9274C100814D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.BackendCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Release;
+		};
+		F12732FC2E9278C300814D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC105F7E61CC1B3E797017A0 /* Pods-HttpClient.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.HttpClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F12732FD2E9278C300814D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1195131562B78A7F73B4DDAD /* Pods-HttpClient.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.HttpClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F12732FF2E9278C300814D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.HttpClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Debug;
+		};
+		F12733002E9278C300814D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.HttpClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartExercise.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CartExercise";
+			};
+			name = Release;
+		};
 		F144922B2E8ECD4600A0F074 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7570484C451D29E5B8059093 /* Pods-CartExercise.debug.xcconfig */;
+			baseConfigurationReference = 8403A2B32DF6CCD4F615A110 /* Pods-CartExercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -357,6 +2752,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -369,11 +2765,11 @@
 		};
 		F144922C2E8ECD4600A0F074 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F67AFF38334A11DA9FD4F72 /* Pods-CartExercise.release.xcconfig */;
+			baseConfigurationReference = 1DE17819AD35C9351E9A34AD /* Pods-CartExercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -390,6 +2786,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -438,7 +2835,7 @@
 				DEVELOPMENT_TEAM = 5MW4M4AD93;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -502,7 +2899,7 @@
 				DEVELOPMENT_TEAM = 5MW4M4AD93;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -525,7 +2922,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -533,6 +2930,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartExerciseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -547,7 +2945,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -555,6 +2953,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartExerciseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -568,13 +2967,14 @@
 		F14492332E8ECD4600A0F074 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartExerciseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -588,13 +2988,14 @@
 		F14492342E8ECD4600A0F074 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.cart.CartExerciseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -608,6 +3009,132 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F11E4E182E8ED07100164C39 /* Build configuration list for PBXNativeTarget "CartSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11E4E142E8ED07100164C39 /* Debug */,
+				F11E4E152E8ED07100164C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11E4E192E8ED07100164C39 /* Build configuration list for PBXNativeTarget "CartSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11E4E162E8ED07100164C39 /* Debug */,
+				F11E4E172E8ED07100164C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11E4E342E8ED0AA00164C39 /* Build configuration list for PBXNativeTarget "CartBackendMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11E4E352E8ED0AA00164C39 /* Debug */,
+				F11E4E362E8ED0AA00164C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11E4E372E8ED0AA00164C39 /* Build configuration list for PBXNativeTarget "CartBackendMockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11E4E382E8ED0AA00164C39 /* Debug */,
+				F11E4E392E8ED0AA00164C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11E4E542E8ED0BC00164C39 /* Build configuration list for PBXNativeTarget "CartCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11E4E552E8ED0BC00164C39 /* Debug */,
+				F11E4E562E8ED0BC00164C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11E4E572E8ED0BC00164C39 /* Build configuration list for PBXNativeTarget "CartCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11E4E582E8ED0BC00164C39 /* Debug */,
+				F11E4E592E8ED0BC00164C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12731EB2E9271CD00814D39 /* Build configuration list for PBXNativeTarget "DependencyInjection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12731E72E9271CD00814D39 /* Debug */,
+				F12731E82E9271CD00814D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12731EC2E9271CD00814D39 /* Build configuration list for PBXNativeTarget "DependencyInjectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12731E92E9271CD00814D39 /* Debug */,
+				F12731EA2E9271CD00814D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F127322E2E92735200814D39 /* Build configuration list for PBXNativeTarget "NetworkingCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F127322F2E92735200814D39 /* Debug */,
+				F12732302E92735200814D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12732312E92735200814D39 /* Build configuration list for PBXNativeTarget "NetworkingCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12732322E92735200814D39 /* Debug */,
+				F12732332E92735200814D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12732722E9274C100814D39 /* Build configuration list for PBXNativeTarget "BackendCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12732732E9274C100814D39 /* Debug */,
+				F12732742E9274C100814D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12732752E9274C100814D39 /* Build configuration list for PBXNativeTarget "BackendCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12732762E9274C100814D39 /* Debug */,
+				F12732772E9274C100814D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12732FB2E9278C300814D39 /* Build configuration list for PBXNativeTarget "HttpClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12732FC2E9278C300814D39 /* Debug */,
+				F12732FD2E9278C300814D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12732FE2E9278C300814D39 /* Build configuration list for PBXNativeTarget "HttpClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F12732FF2E9278C300814D39 /* Debug */,
+				F12733002E9278C300814D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F14491FC2E8ECD4300A0F074 /* Build configuration list for PBXProject "CartExercise" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
