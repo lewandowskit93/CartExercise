@@ -29,6 +29,7 @@ class AppRootCoordinator: PAppRootCoordinator {
         let homeControler = home.build()
         controller.addChild(homeControler)
         controller.view.addSubview(homeControler.view)
+        homeControler.didMove(toParent: controller)
         homeControler.view.pinToParent()
     }
 }

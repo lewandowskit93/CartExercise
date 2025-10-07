@@ -10,10 +10,14 @@ import RxSwift
 import RxCocoa
 
 class AppRootViewController: UIViewController {
+    private var viewModel: PAppViewModel
     private var coordinator: PAppRootCoordinator
+    private let disposeBag: DisposeBag
     
-    init(coordinator: PAppRootCoordinator) {
+    init(viewModel: PAppViewModel, coordinator: PAppRootCoordinator) {
+        self.viewModel = viewModel
         self.coordinator = coordinator
+        self.disposeBag = DisposeBag()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -28,6 +32,18 @@ class AppRootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        subscribeViewModel()
+        viewModel.onViewLoaded()
         coordinator.openHome()
+    }
+    
+    private func subscribeViewModel() {
+        viewModel.appStyleObservable
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] style in
+                guard let self = self else { return }
+                self.view.backgroundColor = style.darkBackgroundColor
+            })
+            .disposed(by: disposeBag)
     }
 }

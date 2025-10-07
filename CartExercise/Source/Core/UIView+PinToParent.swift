@@ -8,13 +8,14 @@
 import UIKit
 
 extension UIView {
-    func pinToParent() {
+    func pinToParent(withPadding padding: UIEdgeInsets = .zero) {
         guard let superview = self.superview else { return }
+        translatesAutoresizingMaskIntoConstraints = false
         let constraints = [
-            topAnchor.constraint(equalTo: superview.topAnchor),
-            bottomAnchor.constraint(equalTo: superview.bottomAnchor),
-            leadingAnchor.constraint(equalTo: superview.leadingAnchor),
-            trailingAnchor.constraint(equalTo: superview.trailingAnchor)
+            topAnchor.constraint(equalTo: superview.topAnchor, constant: padding.top),
+            bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -padding.bottom),
+            leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: padding.left),
+            trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: -padding.right)
         ]
         NSLayoutConstraint.activate(constraints)
     }

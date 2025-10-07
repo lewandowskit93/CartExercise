@@ -17,7 +17,8 @@ class AppRootModuleBuilder: PAppModuleBuilder {
     
     func build() -> UIViewController {
         let coordinator = AppRootCoordinator(diContainer: diContainer)
-        let controller = AppRootViewController(coordinator: coordinator)
+        let viewModel = AppViewModel(diContainer: diContainer)
+        let controller = AppRootViewController(viewModel: viewModel, coordinator: coordinator)
         coordinator.setupController(controller: controller)
         return controller
     }

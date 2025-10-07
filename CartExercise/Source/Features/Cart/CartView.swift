@@ -9,8 +9,10 @@ import UIKit
 import DependencyInjection
 
 class CartView: UIView, PAppStylable {
-    private(set) var cartIdView: UILabel!
-    
+    private(set) var contentView: CartContentView!
+    private(set) var emptyView: EmptyView!
+    private(set) var loadingView: LoadingView!
+
     @Inject(.fixed(DepsContainers.cartApp))
     private var style: PAppStyle
     
@@ -19,6 +21,7 @@ class CartView: UIView, PAppStylable {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        createViews()
         buildViewHierarchy()
         setupConstraints()
         applyStyle(style: style)
@@ -28,25 +31,50 @@ class CartView: UIView, PAppStylable {
         fatalError("Should not be called")
     }
     
+    func applyState(state: CartViewState) {
+        switch(state) {
+            case .content:
+                contentView.isHidden = false
+                emptyView.isHidden = true
+                loadingView.isHidden = true
+            case .empty(let caption):
+                contentView.isHidden = true
+                emptyView.isHidden = false
+                loadingView.isHidden = true
+                emptyView.captionView.text = caption
+            case .loading, .loadingOffers:
+                contentView.isHidden = true
+                emptyView.isHidden = true
+                loadingView.isHidden = false
+        }
+    }
+    
     func applyStyle(style: PAppStyle) {
         self.style = style
-        self.backgroundColor = style.backgroundColor
-        cartIdView.textColor = style.primaryColor
-        cartIdView.font = style.propertyNameFont
+        self.backgroundColor = style.lightBackgroundColor
+        emptyView.applyStyle(style: style)
+        loadingView.applyStyle(style: style)
+        contentView.applyStyle(style: style)
+    }
+    
+    private func createViews() {
+        contentView = CartContentView(frame: .zero)
+        emptyView = factories.createEmptyView()
+        loadingView = factories.createLoadingView()
     }
     
     private func buildViewHierarchy() {
-        cartIdView = factories.createLabel()
-        addSubview(cartIdView)
+        addSubview(contentView)
+        addSubview(emptyView)
+        addSubview(loadingView)
     }
     
     private func setupConstraints() {
-        let constraints = [
-            cartIdView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            cartIdView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            cartIdView.leadingAnchor.constraint(greaterThanOrEqualTo: self.leadingAnchor),
-            cartIdView.trailingAnchor.constraint(lessThanOrEqualTo: self.trailingAnchor),
+        let constraints: [NSLayoutConstraint] = [
         ]
+        contentView.pinToParent()
+        emptyView.pinToParent()
+        loadingView.pinToParent()
         NSLayoutConstraint.activate(constraints)
     }
 }

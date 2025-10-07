@@ -9,7 +9,7 @@ import CartCore
 import RxSwift
 
 public protocol PCartService: CartCore.PCartService {
-    var cartObservable: Observable<Cart> { get }
+    var cartObservable: Observable<Cart?> { get }
     
     func loadCart();
 }

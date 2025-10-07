@@ -22,13 +22,14 @@ class HomeCoordinator: PHomeCoordinator {
     
     func setupController(controller: HomeViewController) {
         self.controller = controller
+        
+    }
+    
+    func openShop() {
+        controller.selectedIndex = 0
     }
     
     func openCart() {
-        let home = CartModuleBuilder(diContainer: diContainer)
-        let cartController = home.build()
-        controller.addChild(cartController)
-        controller.view.addSubview(cartController.view)
-        cartController.view.pinToParent()
+        controller.selectedIndex = 1
     }
 }

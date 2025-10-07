@@ -54,6 +54,11 @@ open class RestApiClient: SimpleHttpClient, PRestApiClient {
         return try decoder.decode(ResponsePayload.self, from: content, contentType: contentType)
     }
     
+    public func post<RequestPayload: Encodable>(path: String, payload: RequestPayload) async throws -> HttpResponse {
+        let payloadData = try encoder.encode(payload, contentType: requestContentType)
+        return try await post(path: path, contentType: requestContentType, payload: payloadData)
+    }
+    
     public func put<RequestPayload: Encodable, ResponsePayload: Decodable>(path: String, payload: RequestPayload) async throws -> ResponsePayload {
         let payloadData = try encoder.encode(payload, contentType: requestContentType)
         let response = try await put(path: path, contentType: requestContentType, payload: payloadData)
@@ -66,6 +71,11 @@ open class RestApiClient: SimpleHttpClient, PRestApiClient {
         return try decoder.decode(ResponsePayload.self, from: content, contentType: contentType)
     }
     
+    public func put<RequestPayload: Encodable>(path: String, payload: RequestPayload) async throws -> HttpResponse {
+        let payloadData = try encoder.encode(payload, contentType: requestContentType)
+        return try await put(path: path, contentType: requestContentType, payload: payloadData)
+    }
+    
     public func delete<RequestPayload: Encodable, ResponsePayload: Decodable>(path: String, payload: RequestPayload) async throws -> ResponsePayload {
         let payloadData = try encoder.encode(payload, contentType: requestContentType)
         let response = try await delete(path: path, contentType: requestContentType, payload: payloadData)
@@ -76,5 +86,10 @@ open class RestApiClient: SimpleHttpClient, PRestApiClient {
             throw RestApiError.contentMissing
         }
         return try decoder.decode(ResponsePayload.self, from: content, contentType: contentType)
+    }
+    
+    public func delete<RequestPayload: Encodable>(path: String, payload: RequestPayload) async throws -> HttpResponse {
+        let payloadData = try encoder.encode(payload, contentType: requestContentType)
+        return try await delete(path: path, contentType: requestContentType, payload: payloadData)
     }
 }

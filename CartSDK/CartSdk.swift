@@ -25,5 +25,11 @@ public class CartSdk: PInitiableWithDIContainer, PHasDIContainer {
         try diContainer.registerLazySingleton(as: PCartService.self) { deps in
             return CartService(diContainer: deps)
         }
+        try diContainer.registerLazySingleton(as: POffersService.self) { deps in
+            return OffersService(diContainer: deps)
+        }
+        try diContainer.registerLazySingleton(as: PCurrenciesService.self) { deps in
+            return CurrenciesService(diContainer: deps)
+        }
     }
 }

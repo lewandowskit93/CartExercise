@@ -16,8 +16,14 @@ class CartModuleBuilder: PAppModuleBuilder {
     }
     
     func build() -> UIViewController {
-        let viewModel = CartViewModel(diContainer: diContainer)
+        let coordinator = CartCoordinator(diContainer: diContainer)
+        let viewModel = CartViewModel(diContainer: diContainer, coordinator: coordinator)
         let controller = CartViewController(viewModel: viewModel)
-        return controller
+        coordinator.setupController(controller: controller)
+        controller.navigationItem.title = "Cart"
+        controller.tabBarItem.title = "Cart"
+        controller.tabBarItem.image = UIImage(systemName: "cart")?.withRenderingMode(.alwaysOriginal)
+        let nav = NavigationModuleBuilder(diContainer: diContainer, contentBuilder: { _ in controller }).build()
+        return nav
     }
 }

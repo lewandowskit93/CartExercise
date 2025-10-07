@@ -17,8 +17,13 @@ class HomeModuleBuilder: PAppModuleBuilder {
     
     func build() -> UIViewController {
         let coordinator = HomeCoordinator(diContainer: diContainer)
-        let controller = HomeViewController(coordinator: coordinator)
+        let viewModel = HomeViewModel(diContainer: diContainer)
+        let controller = HomeViewController(viewModel: viewModel, coordinator: coordinator)
         coordinator.setupController(controller: controller)
+        let shopVC = ShopModuleBuilder(diContainer: diContainer).build()
+        let cartVC = CartModuleBuilder(diContainer: diContainer).build()
+        let tabsControllers = [ shopVC, cartVC ]
+        controller.viewControllers = tabsControllers
         return controller
     }
 }

@@ -8,5 +8,16 @@
 import UIKit
 
 protocol PUIFactories {
+    func createTabeView() -> UITableView
+    func createEmptyView() -> EmptyView
+    func createLoadingView() -> LoadingView
+    func createImageView() -> UIImageView
     func createLabel() -> UILabel
+    func createText() -> UITextView
+    func createButton() -> UIButton
+    func createView() -> UIView
+    func createStepper() -> UIStepper
+    func createStackView(axis: NSLayoutConstraint.Axis) -> UIStackView
+    func createScrollView() -> UIScrollView
+
 }

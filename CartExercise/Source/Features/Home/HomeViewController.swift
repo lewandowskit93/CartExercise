@@ -6,18 +6,19 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-class HomeViewController: UIViewController {
+class HomeViewController: UITabBarController {
+    let viewModel: PHomeViewModel
     let coordinator: PHomeCoordinator
-    
-    init(coordinator: PHomeCoordinator) {
+    private let disposeBag: DisposeBag
+        
+    init(viewModel: PHomeViewModel, coordinator: PHomeCoordinator) {
+        self.viewModel = viewModel
         self.coordinator = coordinator
+        self.disposeBag = DisposeBag()
         super.init(nibName: nil, bundle: nil)
-    }
-    
-    override func loadView() {
-        view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
     }
     
     required init?(coder: NSCoder) {
@@ -26,6 +27,33 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        coordinator.openCart()
+        subscribeViewModel()
+        viewModel.onViewLoaded()
+    }
+    
+    private func subscribeViewModel() {
+        viewModel.appStyleObservable
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] style in
+                guard let self = self else { return }
+                self.view.backgroundColor = style.darkBackgroundColor
+                tabBar.isTranslucent = false
+                let appearance = UITabBarAppearance()
+                appearance.configureWithOpaqueBackground()
+                let stackedAppearance = appearance.stackedLayoutAppearance
+                stackedAppearance.disabled.iconColor = style.disabledItemColor
+                stackedAppearance.disabled.titleTextAttributes = [.foregroundColor: style.disabledItemColor]
+                stackedAppearance.normal.iconColor = style.unselectedItemColor
+                stackedAppearance.normal.titleTextAttributes = [.foregroundColor: style.unselectedItemColor]
+                stackedAppearance.selected.iconColor = style.selectedItemColor
+                stackedAppearance.selected.titleTextAttributes = [.foregroundColor: style.selectedItemColor]
+                appearance.backgroundColor = style.darkBackgroundColor
+                appearance.stackedLayoutAppearance = stackedAppearance
+                appearance.inlineLayoutAppearance = stackedAppearance
+                appearance.compactInlineLayoutAppearance = stackedAppearance
+                tabBar.standardAppearance = appearance
+                tabBar.scrollEdgeAppearance = appearance
+                tabBar.backgroundColor = style.darkBackgroundColor
+            }).disposed(by: disposeBag)
     }
 }
