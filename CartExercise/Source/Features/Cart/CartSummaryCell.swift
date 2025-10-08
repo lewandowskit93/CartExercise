@@ -31,7 +31,7 @@ class CartSummaryCell: UITableViewCell {
     private func setupView() {
         cartSummaryView = CartSummaryView(frame: .zero)
         cartSummaryView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(cartSummaryView)
+        contentView.addSubview(cartSummaryView)
         cartSummaryView.pinToParent()
     }
 }

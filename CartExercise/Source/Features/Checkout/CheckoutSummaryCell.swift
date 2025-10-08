@@ -31,7 +31,7 @@ class CheckoutSummaryCell: UITableViewCell {
     private func setupView() {
         cartSummaryView = CheckoutSummaryView(frame: .zero)
         cartSummaryView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(cartSummaryView)
+        contentView.addSubview(cartSummaryView)
         cartSummaryView.pinToParent()
     }
 }

@@ -31,7 +31,7 @@ class CheckoutItemCell: UITableViewCell {
     private func setupView() {
         cartItemView = CheckoutItemView(frame: .zero)
         cartItemView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(cartItemView)
+        contentView.addSubview(cartItemView)
         cartItemView.pinToParent()
     }
 }

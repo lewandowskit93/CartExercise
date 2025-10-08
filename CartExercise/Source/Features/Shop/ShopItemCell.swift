@@ -22,16 +22,6 @@ class ShopItemCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        let buttonPoint = shopItemView.addToCartButton.convert(point, from: self)
-        
-        if(shopItemView.addToCartButton.bounds.contains(buttonPoint)) {
-            return shopItemView.addToCartButton
-        }
-        
-        return super.hitTest(point, with: event)
-    }
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         shopItemView.prepareForReuse()
@@ -41,7 +31,7 @@ class ShopItemCell: UITableViewCell {
     private func setupView() {
         shopItemView = ShopItemView(frame: .zero)
         shopItemView.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(shopItemView)
+        contentView.addSubview(shopItemView)
         shopItemView.pinToParent()
     }
 }
